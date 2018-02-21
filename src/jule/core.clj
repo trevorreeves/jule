@@ -4,4 +4,10 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+
+  (defn RunRule [rule factSource]
+    (let [result ((:condition rule) factSource)]))
+
+  (RunRule #{:condition (fn [])})
+
+  (println "Rule executed"))
